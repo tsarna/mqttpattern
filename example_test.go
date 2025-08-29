@@ -1,8 +1,10 @@
 package mqttpattern_test
 
-import "fmt"
+import (
+	"fmt"
 
-import mqttpattern "github.com/amir-yaghoubi/mqtt-pattern"
+	mqttpattern "github.com/tsarna/mqttpattern"
+)
 
 func ExampleMatches() {
 	fmt.Println(mqttpattern.Matches("foo/+/baz", "foo/bar/baz"))
